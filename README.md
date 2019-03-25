@@ -1,4 +1,4 @@
-![picture alt](https://github.com/xhimanshuz/curlud/tree/master/Data/githubPortfolio.png "Features")
+![picture alt](https://github.com/xhimanshuz/curlud/blob/master/Data/githubPortfolio.png "Features")
 # curlud
 Transfer and download files with the help of Curl Library and Qt integration.
 
