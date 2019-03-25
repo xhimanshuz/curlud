@@ -1,5 +1,4 @@
 #include "curlinterface.h"
-#include<QDebug>
 
 CurlInterface::CurlInterface(): speed(0)
 {

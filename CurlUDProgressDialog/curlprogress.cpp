@@ -72,10 +72,10 @@ void CurlProgress::renderUi()
 
     pauseButton = new QPushButton("Pause");
     cancelButton = new QPushButton("Cancel");
+    connect(cancelButton, &QPushButton::clicked, this, &CurlProgress::terminateCurl);
     closeButton = new QPushButton("Close");
     connect(closeButton, &QPushButton::clicked, [this]{
-//        this->deleteLater();
-        this->close();
+        this->hide();
     });
     hbox = new QHBoxLayout;
     hbox->addStretch();

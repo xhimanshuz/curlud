@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>Data/closeIcon.png</file>
+        <file>Data/header.png</file>
+        <file>Data/icon.png</file>
     </qresource>
 </RCC>

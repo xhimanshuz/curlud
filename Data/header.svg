@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5194"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="header.svg"
+   inkscape:export-filename="/home/gnu/Documents/Github/curlud/Data/header.png"
+   inkscape:export-xdpi="95.850243"
+   inkscape:export-ydpi="95.850243">
+  <defs
+     id="defs5188" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="204.27892"
+     inkscape:cy="904.47418"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5191">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       id="rect5196"
+       width="97.25087"
+       height="14.950916"
+       x="9.7581434"
+       y="43.686718"
+       style="fill:#1a1a1a;stroke:none;stroke-width:0.12610713;stroke-opacity:1"
+       inkscape:export-xdpi="95.850243"
+       inkscape:export-ydpi="95.850243" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.39848137px;line-height:1.25;font-family:'Standard Symbols PS';-inkscape-font-specification:'Standard Symbols PS';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.13496202"
+       x="12.402099"
+       y="50.667454"
+       id="text6005"
+       transform="scale(0.97105914,1.0298034)"><tspan
+         sodipodi:role="line"
+         id="tspan6003"
+         x="12.402099"
+         y="50.667454"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.19797516px;font-family:'ShureTechMono Nerd Font';-inkscape-font-specification:'ShureTechMono Nerd Font';fill:#ffffff;stroke-width:0.13496202">CurlUD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.87918997px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.13496202"
+       x="13.225572"
+       y="52.987839"
+       id="text6009"
+       transform="scale(0.97105914,1.0298034)"><tspan
+         sodipodi:role="line"
+         id="tspan6007"
+         x="13.225572"
+         y="52.987839"
+         style="font-size:2.15939236px;fill:#ffffff;stroke-width:0.13496202">File Transfer application with <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00ff00;stroke-width:0.13496202"
+   id="tspan6311">Qt</tspan> and <tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ff0000;stroke-width:0.13496202"
+   id="tspan6317">libCurl</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.87918997px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13496202"
+       x="28.412689"
+       y="44.29253"
+       id="text6013"
+       transform="scale(0.97105914,1.0298034)"><tspan
+         sodipodi:role="line"
+         id="tspan6011"
+         x="28.412689"
+         y="44.29253"
+         style="font-size:1.43959498px;fill:#ffffff;stroke-width:0.13496202">UPLOAD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.87918997px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13496202"
+       x="31.741438"
+       y="45.439713"
+       id="text6017"
+       transform="scale(0.97105914,1.0298034)"><tspan
+         sodipodi:role="line"
+         id="tspan6015"
+         x="31.741438"
+         y="45.439713"
+         style="font-size:1.07969618px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.13496202"
+         dy="0">DOWNLOAD</tspan></text>
+    <rect
+       style="fill:#1a1a1a;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       id="rect6323"
+       width="17.639788"
+       height="17.639788"
+       x="21.648832"
+       y="63.005527"
+       inkscape:export-xdpi="92.160004"
+       inkscape:export-ydpi="92.160004" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="21.247021"
+       y="73.942085"
+       id="text6327"><tspan
+         sodipodi:role="line"
+         id="tspan6325"
+         x="21.247021"
+         y="73.942085"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.28888893px;font-family:'ShureTechMono Nerd Font';-inkscape-font-specification:'ShureTechMono Nerd Font';fill:#ffffff;stroke-width:0.26458332">CUD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="24.326899"
+       y="77.165436"
+       id="text6331"><tspan
+         sodipodi:role="line"
+         id="tspan6329"
+         x="24.326899"
+         y="77.165436"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:'ShureTechMono Nerd Font';-inkscape-font-specification:'ShureTechMono Nerd Font';fill:#ffffff;stroke-width:0.26458332">CurlUD</tspan></text>
+  </g>
+</svg>

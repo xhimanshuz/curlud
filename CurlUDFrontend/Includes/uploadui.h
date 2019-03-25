@@ -25,6 +25,7 @@
 #include<QFileDialog>
 #include<QUrl>
 #include<QDir>
+#include<QPixmap>
 
 class UploadUi:public QWidget, public AbsInterface
 {

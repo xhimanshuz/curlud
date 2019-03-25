@@ -6,6 +6,8 @@
 int main(int c, char **v)
 {
     QApplication app(c, v);
+    app.setWindowIcon(QIcon("://Data/icon.png"));
+
     UploadUi ui;
     CurlUDBackend cb;
     QObject::connect(&ui, &UploadUi::apply, [&cb, &ui](QString hostname, QString protocol, QString port, QString username, QString passwd, bool anon, QString source, QString destination){
@@ -16,7 +18,7 @@ int main(int c, char **v)
     QObject::connect(&ui, &UploadUi::uploadClicked, [&cb]{
         cb.uploadPressed();
     });
-
     ui.show();
+
     return app.exec();
 }

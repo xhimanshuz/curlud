@@ -1,5 +1,4 @@
 #include "CurlUDFrontend/Includes/uploadui.h"
-#include<QDebug>
 
 UploadUi::UploadUi(QWidget *parent): QWidget (parent)
 {
@@ -20,11 +19,12 @@ UploadUi::UploadUi(QWidget *parent): QWidget (parent)
 void UploadUi::renderUi()
 {
     mainLayout = new QVBoxLayout;
-    title = new QLabel("<h1>UPLOAD</h1>");
+    title = new QLabel;
+    title->setPixmap(QPixmap("://Data/header.png"));
     mainLayout->addWidget(title);
 
     protocolComboBox = new QComboBox;
-    protocolComboBox->addItems(QStringList()<< "FTP"<< "SFTP");
+    protocolComboBox->addItems(QStringList()<< "FTP" <<"SFTP");
     hostLineEdit = new QLineEdit;
     hostLineEdit->setPlaceholderText(tr("hostname"));
     portSpinBox = new QSpinBox;
@@ -46,7 +46,6 @@ void UploadUi::renderUi()
     sourceButton = new QPushButton("...");
     connect(sourceButton, &QPushButton::clicked, [this]{
         sourceUrl = QFileDialog::getOpenFileUrl(this, tr("Select File"));
-//        qDebug()<< sourceUrl.fileName()<< sourceUrl.port()<< sourceUrl.path()<< sourceUrl.url();
         this->sourceLineEdit->setText(sourceUrl.path());
     });
     hbox = new QHBoxLayout;
@@ -56,6 +55,7 @@ void UploadUi::renderUi()
     mainLayout->addLayout(hbox);
 
     destinationLineEdit = new QLineEdit;
+    destinationLineEdit->setReadOnly(true);
     defaultDestination = new QPushButton("Default");
 
     hbox = new QHBoxLayout;
@@ -82,7 +82,7 @@ void UploadUi::renderUi()
     applyButton = new QPushButton("Apply");
     connect(applyButton, &QPushButton::clicked, [this]{
         *hostname = hostLineEdit->text();
-        *protocol = protocolComboBox->currentText();
+        *protocol = this->protocolComboBox->currentText();
         *port = portSpinBox->text();
         *username = usernameLineEdit->text();
         *passwd = passwdLineEdit->text();
@@ -90,7 +90,7 @@ void UploadUi::renderUi()
         *destination = destinationLineEdit->text();
         anon = anonymousCheckBox->isChecked();
         emit apply(*hostname, *protocol, *port, *username, *passwd, anon, *source, *destination);
-        destinationLineEdit->setText(*destination);
+//        destinationLineEdit->setText(*destination);
     });
 
     QVBoxLayout *subVbox = new QVBoxLayout;

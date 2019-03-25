@@ -17,5 +17,7 @@ SOURCES += \
 RESOURCES += \
     CurlUDFrontend/res.qrc
 
+DESTDIR = $$PWD/../CurlUD_Application/
+
 LIBS += -lcurl
 

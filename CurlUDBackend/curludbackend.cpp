@@ -1,7 +1,6 @@
 #include "curludbackend.h"
-#include<QDebug>
 
-CurlUDBackend::CurlUDBackend()
+CurlUDBackend::CurlUDBackend(): inProcess(false)
 {
 
 }
@@ -13,7 +12,6 @@ CurlUDBackend::~CurlUDBackend()
 
 void CurlUDBackend::applyPressed(QString hostname, QString protocol, QString port, QString username, QString passwd, bool anon, QString source, QString &destination)
 {
-    qDebug()<< Q_FUNC_INFO << protocol;
     this->hostname = hostname;
     this->protocol = protocol;
     this->port = port.toLong();
@@ -27,7 +25,8 @@ void CurlUDBackend::applyPressed(QString hostname, QString protocol, QString por
 
 void CurlUDBackend::uploadPressed()
 {
-    qDebug()<< Q_FUNC_INFO;
+    if(!inProcess)
+    {
     fileHandling(source);
 
     CurlInterface *curl = new CurlInterface;
@@ -35,7 +34,6 @@ void CurlUDBackend::uploadPressed()
     connect(curl, &CurlInterface::progressSignal, [this](curl_off_t totalDownload, curl_off_t currentDowload, curl_off_t totalUpload, curl_off_t currentUpload, curl_off_t speed){
         this->progressSignal(totalDownload, currentDowload, totalUpload, currentUpload, speed);
     });
-
     curl->initialize();
     curl->setup(destination.toString(), port, QString(username+":"+passwd), true, CurlInterface::sftp, fdopen(file->handle(), "rb"), fileSize);
     proDialog = new CurlProgress(destination.fileName(), source, destination.toString());
@@ -57,12 +55,17 @@ void CurlUDBackend::uploadPressed()
         this->proDialog->getPauseButton()->setEnabled(false);
     });
     connect(proDialog, &CurlProgress::terminateCurl, curl, &CurlInterface::terminate);
+    inProcess = true;
+    }
+    else
+    {
+        proDialog->show();
+    }
 }
 
 void CurlUDBackend::progressSignal(curl_off_t totalDownload, curl_off_t currentDownload, curl_off_t totalUpload, curl_off_t currentUpload, curl_off_t speed)
 {
     proDialog->updateValues(currentTotalSize(totalUpload, currentUpload), percentage(totalUpload, currentUpload), this->unitHandling(speed), "time");
-//    qDebug()<< totalDownload << currentDownload << totalUpload << currentUpload;
 }
 
 // Adding Memory unit (bytes, KB, MB, GB) according to size to Size of file
@@ -80,23 +83,18 @@ QString CurlUDBackend::unitHandling(long size)
 
 void CurlUDBackend::fileHandling(QString f)
 {
-    qDebug()<< Q_FUNC_INFO;
-
+//    qDebug()<< Q_FUNC_INFO;
     file = new QFile(f);
     if(!file->open(QFile::ReadOnly))
     {
-        qDebug()<< "FILE: I/O Error";
         return;
     }
-    // FileName QString
     fileInfo = new QFileInfo(*file);
     filename = file->fileName();
 
-    // FileSize QString
     struct stat fileStat;
     fstat(file->handle(), &fileStat);
     fileSize = fileStat.st_size;
-    qDebug()<< "FILE Size: "<< unitHandling(fileSize);
 }
 
 void CurlUDBackend::destinationHandler(QString hostname, QString protocol, QString port, QString username, QString source, bool anon)
@@ -106,7 +104,6 @@ void CurlUDBackend::destinationHandler(QString hostname, QString protocol, QStri
     this->destination.setPort(port.toInt());
     ((!anon)?this->destination.setPath("/home/"+username+"/"):this->destination.setPath("/"));
     this->destination.setPath(this->destination.path()+QFileInfo(source).fileName());
-    qDebug()<< destination;
 }
 
 QString CurlUDBackend::currentTotalSize(curl_off_t total, curl_off_t current)

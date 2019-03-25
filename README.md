@@ -1,3 +1,4 @@
+![picture alt](https://github.com/xhimanshuz/curlud/tree/master/Data/githubPortfolio.png "Features")
 # curlud
 Transfer and download files with the help of Curl Library and Qt integration.
 
@@ -14,3 +15,4 @@ Transfer and download files with the help of Curl Library and Qt integration.
 * Cross-platform Testing
 * Minor and Major Bugs fixing
 * Update checking
+

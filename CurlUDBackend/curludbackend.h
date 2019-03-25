@@ -57,6 +57,7 @@ private:
     long fileSize;
     QString fileSizeUnit;
     QFileInfo *fileInfo;
+    bool inProcess;
 };
 
 #endif // CURLUDBACKEND_H
