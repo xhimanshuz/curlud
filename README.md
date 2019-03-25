@@ -2,12 +2,15 @@
 # curlud
 Transfer and download files with the help of Curl Library and Qt integration.
 
+## Currently Supported features
+* Uploading
+
 ## TODO
-* Uploading Supported
 * Directory Uploading Supported
 * Recursively Uploading
 * Downloading Supported
 * Recursively Downloading
+* Transfer speed
 * Speed Graph Feature
 * Logs Feature
 * Pause, Resume
@@ -15,4 +18,3 @@ Transfer and download files with the help of Curl Library and Qt integration.
 * Cross-platform Testing
 * Minor and Major Bugs fixing
 * Update checking
-
